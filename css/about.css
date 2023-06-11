@@ -1,0 +1,107 @@
+.about_achievements{
+    margin-top: 3rem;
+    color:white;
+}
+.about_achievements-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+.about_achievements-right > p{
+    margin: 1.6rem 0 2.5rem;
+}
+.achievements_cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+
+}
+.achievements_card{
+    background: rgb(98, 18, 247);
+    padding: 1.6rem;
+    border-radius: 1.6rem;
+    text-align: center;
+}
+.achievements_card:hover{
+    background: red;
+    box-shadow: 0 3rem 3rem rgba(0,0,0,0.3);
+}
+.achievements_icon{
+    background-color: rgb(217, 232, 9);
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+
+}
+.achievements_card:nth-child(2) .achievements_icon{
+    background: rgb(5, 252, 120);
+}
+.achievements_card:nth-child(3) .achievements_icon{
+    background: rgb(229, 13, 248);
+}
+
+/* ======================================team========================================== */
+
+.team{
+    background: rgb(98, 18, 247);
+    box-shadow: inset 0 0 3rem rgba(0,0,0,0.5);
+
+}
+.team_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.team_member{
+    background: rgb(18, 67, 99);
+    padding: 1rem;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+.team_member:hover{
+    background: transparent;
+    border-color: rgb(17, 7, 56);
+}
+.team_member-image img{
+    filter: saturate(0);
+}
+.team_member:hover img{
+    filter: saturate(1);
+}
+.team_member-info *{
+    text-align: center;
+    margin-top: 1.4rem;
+}
+.team_member-info p{
+    color: rgb(235, 255, 123);
+}
+.team_member-socials{
+    
+    position: absolute;
+    top: 50%;
+    right:-100%;
+    display: flex;
+    flex-direction:column ;
+    background:#2d3cde;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgb(0,0,0,0.3);
+    transition: var(--transition);
+}
+
+
+.team_member:hover .team_member-socials{
+    right: 0;
+}
+.team_member-socials a {
+    padding: 1rem;
+}
+
+/* ===========================media =========================== */
+@media screen and (max-width: 1024){
+    body{
+        background: yellow;
+    }
+}
